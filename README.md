@@ -16,5 +16,6 @@ This will be a simple full-stack CRUD app built via live-stream
 * Node
 * Express
 * SQL
+* Sequelize
 * JSON Web Tokens (JWT)
 
