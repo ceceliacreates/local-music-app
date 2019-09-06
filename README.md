@@ -6,7 +6,7 @@ Streaming Thursdays @ 7 p.m. EST at http://www.twitch.tv/ceceliacreates
 
 Past episodes available on YouTube at https://www.youtube.com/channel/UCc5ceLC-OskzfQ2pMoCEzwQ
 
-### Episode 1 9/5/2019
+### Episode 1: 9/5/2019
 
 Issues Resolved:
 
