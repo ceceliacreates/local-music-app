@@ -21,7 +21,7 @@ Issues Resolved:
 
 Video: (https://youtu.be/6Uk94-Hsi3Y)
 
-Issues Worked On:
+Issues Resolved:
 
 - [Setup database](https://github.com/ceceliacreates/local-music-app/issues/6)
 
