@@ -17,6 +17,14 @@ Issues Resolved:
 - [Build File Structure](https://github.com/ceceliacreates/local-music-app/issues/1)
 - [Create Server](https://github.com/ceceliacreates/local-music-app/issues/4)
 
+### Episode 2 (Aired 9/12/19)
+
+Video: (https://youtu.be/6Uk94-Hsi3Y)
+
+Issues Worked On:
+
+- [Setup database](https://github.com/ceceliacreates/local-music-app/issues/6)
+
 ## MVP Requirements:
 
 * Artists can CREATE a profile to add themselves to the database
