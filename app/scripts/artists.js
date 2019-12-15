@@ -1,5 +1,3 @@
-
-
 fetch('/api/artists').then(response => {return response.json()}).then(artists => {
     const list = document.getElementById("artists");
 
