@@ -1,4 +1,5 @@
-const { Artist } = require("../app/scripts/components/Artist");
+const { Artist } = require("../app/scripts/components/Artist.js");
+let artists = require("../app/data/artists.json");
 
 var assert = require('chai').assert;
  require('../app/scripts/components/Artist.js');

@@ -29,4 +29,21 @@ module.exports = function(app) {
      console.log(artists)
      res.json(artists[index]);
    })
+
+   app.delete("/api/delete", function (req, res) {
+    
+    const artistName = req.body.name;
+    const index = artists.findIndex(artist => artist.name === artistName);
+
+   const deleted = artists.splice(index, 1);
+
+     if (deleted.length >= 1) {
+
+       res.json(deleted);
+     }
+
+     else {
+      res.status(400).send('Bad Request')
+     }
+   })
   };
