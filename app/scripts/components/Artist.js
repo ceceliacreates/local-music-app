@@ -1,5 +1,5 @@
 // uncomment next line when running in browser
-//export default
+export default
 class Artist {
     constructor(name, URL, photo) {
         this.name = name;
@@ -82,4 +82,4 @@ class Artist {
     }
 }
 //uncomment next line when running tests
-exports.Artist = Artist;
+//exports.Artist = Artist;
