@@ -1,9 +1,9 @@
 // uncomment next line when running in browser
 export default
 class Artist {
-    constructor(name, URL, photo) {
+    constructor(name, url, photo) {
         this.name = name;
-        this.URL = URL;
+        this.url = url;
         this.photo = photo;
     }
 
@@ -11,7 +11,7 @@ class Artist {
         let isValid = true;
 
         if (this.name == undefined ||this.name.length == 0) isValid = false;
-        if (this.URL == undefined ||this.URL.length == 0) isValid = false;
+        if (this.url == undefined ||this.url.length == 0) isValid = false;
         if (this.photo == undefined || this.photo.length == 0) isValid = false;
 
         return isValid;
@@ -20,7 +20,7 @@ class Artist {
     add() {
         const data = {
             'name': this.name,
-            'url': this.URL,
+            'url': this.url,
             'photo': this.photo
         };
     
@@ -44,6 +44,8 @@ class Artist {
             'url': this.url,
             'photo': this.photo
         };
+
+        console.log(data);
     
         fetch("/api/edit", {
             method: 'PUT',

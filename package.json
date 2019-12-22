@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/ceceliacreates/local-music-app#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql2": "^2.0.2",
+    "sequelize": "^5.21.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",

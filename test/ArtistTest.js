@@ -14,7 +14,7 @@ describe('Artist', function() {
 
       //assert
       assert.equal(artist.name, "The Beatles");
-      assert.equal(artist.URL, "http://thebeatles.com");
+      assert.equal(artist.url, "http://thebeatles.com");
       assert.equal(artist.photo, "beatles.jpg");
     });
   });

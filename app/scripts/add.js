@@ -8,13 +8,19 @@ document.getElementById('submit').addEventListener('click', event => {
 
     const artist = new Artist(name, url, photo);
 
+    console.log("front end object" + artist);
+
     const valid = artist.validate();
 
     if (valid) {
-    
-    artist.add();
-}
-const p = document.getElementById("response");
+
+        artist.add();
+    }
+
+    else {
+
+        const p = document.getElementById("response");
         p.innerText = "Invalid Entry";
+    }
 
 })

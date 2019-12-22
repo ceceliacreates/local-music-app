@@ -1,49 +1,95 @@
-let artists = require("../data/artists.json");
+//let artists = require("../data/artists.json");
+const db = require("../../models");
 
 module.exports = function(app) {
     app.get("/api/artists", function(req, res) {
-      res.json(artists);
+      db.Artist.findAll().then(function (artists) {
+
+        res.json(artists);
+      })
     });
 
    app.post("/api/add", function(req, res) {
-     console.log(req.body)
-     artists.push(req.body);
-     console.log(artists);
-     res.end();
+
+    //add to server only
+    //  console.log(req.body)
+    //  artists.push(req.body);
+    //  console.log(artists);
+
+     let name = req.body.name;
+     let url = req.body.url;
+     let photo = req.body.photo;
+
+     //add to database
+     db.Artist.create({
+       name: name,
+       url: url,
+       photo: photo
+     }).then(res.end());
    })
 
    app.put("/api/edit", function (req, res) {
      console.log(req.body);
 
-     const artistUpdate = req.body;
-     const name = artistUpdate.name;
-     const url = artistUpdate.url;
-     const photo = artistUpdate.photo;
+     //server only code
+    //  const artistUpdate = req.body;
+    //  const name = artistUpdate.name;
+    //  const url = artistUpdate.url;
+    //  const photo = artistUpdate.photo;
 
-     const index = artists.findIndex(artist => artist.name === name)
+    //  const index = artists.findIndex(artist => artist.name === name)
 
-     artists[index].name = name;
-     artists[index].url = url;
-     artists[index].photo = photo;
+    //  artists[index].name = name;
+    //  artists[index].url = url;
+    //  artists[index].photo = photo;
 
-     console.log(artists)
-     res.json(artists[index]);
+    //  console.log(artists)
+    //  res.json(artists[index]);
+
+    const artistUpdate = {
+      name: req.body.name,
+      url: req.body.url,
+      photo: req.body.photo
+    }
+
+    db.Artist.update(artistUpdate, {
+      where: {
+        name: artistUpdate.name
+      }
+    }).then(function (updatedArtist) {
+      res.json(updatedArtist);
+    })
    })
 
    app.delete("/api/delete", function (req, res) {
     
     const artistName = req.body.name;
-    const index = artists.findIndex(artist => artist.name === artistName);
 
-   const deleted = artists.splice(index, 1);
+  // Server only
+  //   const index = artists.findIndex(artist => artist.name === artistName);
 
-     if (deleted.length >= 1) {
+  //  const deleted = artists.splice(index, 1);
 
-       res.json(deleted);
-     }
+  //    if (deleted.length >= 1) {
 
-     else {
+  //      res.json(deleted);
+  //    }
+
+  //    else {
+  //     res.status(400).send('Bad Request')
+  //    }
+
+  db.Artist.destroy({
+    where: {
+      name: artistName
+    }
+  }).then(function (response) {
+    if (response == 0) {
       res.status(400).send('Bad Request')
-     }
+    }
+    else {
+      res.end()
+    }
+  })
    })
   };

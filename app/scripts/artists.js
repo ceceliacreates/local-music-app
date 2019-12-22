@@ -3,10 +3,10 @@ fetch('/api/artists').then(response => {return response.json()}).then(artists =>
 
     artists.forEach(artist => {
         const artistName = artist.name;
-        const artistURL = artist.url;
+        const artisturl = artist.url;
         const artistPhoto = artist.photo;
 
-        console.log(artistName, artistURL, artistPhoto);
+        console.log(artistName, artisturl, artistPhoto);
     
         const artistNode = document.createElement('ul');
         const nameNode = document.createElement('li');
@@ -16,7 +16,7 @@ fetch('/api/artists').then(response => {return response.json()}).then(artists =>
         photoNode.style.height = '150px';
     
         nameNode.innerText = artistName;
-        urlNode.innerText = artistURL;
+        urlNode.innerText = artisturl;
         photoNode.src = artistPhoto;
     
         artistNode.appendChild(nameNode);
