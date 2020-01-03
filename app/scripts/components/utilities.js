@@ -35,12 +35,12 @@ function RenderList() {
             const artistPhoto = artist.photo;
             const artistId = artist.id;
 
-            const artistNode = document.createElement('ul');
+            const artistNode = document.createElement('div');
 
             artistNode.innerHTML = `
-                <li>${artistName}</li>
-                <li>${artisturl}</li>
-                <img src=${artistPhoto} style="width:150px; height:150px">
+                <h3>${artistName}</h3>
+                <img src=${artistPhoto}>
+                <h5>${artisturl}</h5>
                 `
             const deleteButton = document.createElement('button');
             deleteButton.setAttribute('id', artistId);

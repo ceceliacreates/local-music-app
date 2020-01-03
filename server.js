@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use(express.static("public"));
-app.use('/scripts', express.static(__dirname + '/app/scripts'));
+app.use(express.static(__dirname + '/app/public/'));
+app.use('/scripts', express.static(__dirname + '/app/scripts/'));
 
 require("./app/api/api-routes")(app);
 require("./app/api/html-routes")(app);
