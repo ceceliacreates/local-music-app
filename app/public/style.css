@@ -10,3 +10,8 @@ h5 {
 button {
     display: block;
 }
+
+input {
+    display: block;
+    margin: 0.5rem;
+}
