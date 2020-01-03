@@ -9,6 +9,12 @@ module.exports = function(app) {
       })
     });
 
+    app.get("/api/artists/:id", function(req, res) {
+      db.Artist.findOne({where: {id: req.params.id}}).then(function (artist) {
+        res.json(artist)
+      })
+    });
+
    app.post("/api/add", function(req, res) {
 
     //add to server only
