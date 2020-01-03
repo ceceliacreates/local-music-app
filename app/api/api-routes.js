@@ -29,7 +29,6 @@ module.exports = function(app) {
    })
 
    app.put("/api/edit", function (req, res) {
-     console.log(req.body);
 
      //server only code
     //  const artistUpdate = req.body;
@@ -63,7 +62,7 @@ module.exports = function(app) {
 
    app.delete("/api/delete", function (req, res) {
     
-    const artistName = req.body.name;
+    const artistId = req.body.id;
 
   // Server only
   //   const index = artists.findIndex(artist => artist.name === artistName);
@@ -81,7 +80,7 @@ module.exports = function(app) {
 
   db.Artist.destroy({
     where: {
-      name: artistName
+      id: artistId
     }
   }).then(function (response) {
     if (response == 0) {

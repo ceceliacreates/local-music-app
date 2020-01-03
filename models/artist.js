@@ -1,8 +1,15 @@
 module.exports = function(sequelize, DataTypes) {
     var Artist = sequelize.define("Artist", {
-        name: DataTypes.STRING,
-        url: DataTypes.STRING,
-        photo: DataTypes.STRING
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        url:{
+            type: DataTypes.STRING
+        },
+        photo:{
+            type: DataTypes.STRING
+        } 
     });
     return Artist;
 }

@@ -1,7 +1,10 @@
+import RenderList from "./utilities.js";
+
 // uncomment next line when running in browser
 export default
 class Artist {
-    constructor(name, url, photo) {
+    constructor(id, name, url, photo) {
+        this.id = id;
         this.name = name;
         this.url = url;
         this.photo = photo;
@@ -64,6 +67,7 @@ class Artist {
     delete() {
 
         const data = {
+            'id': this.id,
             'name': this.name,
             'url': this.url,
             'photo': this.photo
@@ -80,6 +84,7 @@ class Artist {
             console.log(response);
             const p = document.getElementById("response");
             p.innerText = response.status == 200? "Artist deleted." : "Something went wrong";
+            RenderList();
         })
     }
 }

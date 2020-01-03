@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Jenny Lewis",
+        "url": "http://jennylewis.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/On_the_Line_%28Jenny_Lewis_album_cover%29.jpg/220px-On_the_Line_%28Jenny_Lewis_album_cover%29.jpg"
+    },
+    {
+        "name": "Death Cab for Cutie",
+        "url": "http://deathcabforcutie.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Transatlanticism.jpg"
+    },
+    {
+        "name": "Patty Griffin",
+        "url": "http://pattygriffin.com",
+        "photo": "https://images-na.ssl-images-amazon.com/images/I/71S0nIv7GiL._SX355_.jpg"
+    },
+    {
+        "name": "Josh Ritter",
+        "url": "http://joshritter.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Historical_conquests_cover.jpg/220px-Historical_conquests_cover.jpg"
+    },
+    {
+        "name": "Sufjan Stevens",
+        "url": "http://sufjanstevens.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/e/ec/Sufjan_Stevens_-_Carrie_%26_Lowell.jpg"
+    },
+    {
+        "name": "Damien Rice",
+        "url": "http://damienrice.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Damien_Rice_O_album_cover.jpg/220px-Damien_Rice_O_album_cover.jpg"
+    },
+    {
+        "name": "Andrew McMahon",
+        "url": "http://andrewmcmahon.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Andrew_McMahon_in_the_Wilderness.jpg/220px-Andrew_McMahon_in_the_Wilderness.jpg"
+    },
+    {
+        "name": "Manchester Orchestra",
+        "url": "http://manchesterorchestra.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Manchester_Orchestra_-_A_Black_Mile_to_the_Surface.jpg"
+    },
+    {
+        "name": "Elliott Smith",
+        "url": "http://elliottsmith.com",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/3/35/ElliottsmithXOalbumcover.jpg"
+    },
+    {
+        "name": "Blind Pilot",
+        "url": "http://blindpilot.com",
+        "photo": "https://images-na.ssl-images-amazon.com/images/I/717JDBDvowL._SX355_.jpg"
+    },
+    {
+        "name": "Linda Ronstadt",
+        "url": "http://lindaronstadt.com",
+        "photo": "https://e.snmc.io/i/300/w/f3a6b4a9ae28f25d7dca0e1f2439942c/3140907"
+    }
+    
+]

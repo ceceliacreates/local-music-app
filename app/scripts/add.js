@@ -6,7 +6,7 @@ document.getElementById('submit').addEventListener('click', event => {
     const url = document.getElementById('url').value;
     const photo = document.getElementById('photo').value;
 
-    const artist = new Artist(name, url, photo);
+    const artist = new Artist(undefined, name, url, photo);
 
     console.log("front end object" + artist);
 

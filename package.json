@@ -4,7 +4,8 @@
   "description": "This will be a simple full-stack CRUD app built via live-stream",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "seed": "node seeds/artists-seed.js"
   },
   "repository": {
     "type": "git",
